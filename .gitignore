@@ -1,0 +1,86 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+/frontend
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool
+*.out
+./claude
+
+# Go workspace file
+go.work
+go.work.sum
+
+# Dependency directories
+vendor/
+
+# Build output
+bin/
+dist/
+build/
+
+# Project binary (compiled main program)
+nexusai
+nexusai.exe
+
+# IDE and editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Environment files
+.env
+.env.local
+.env.*.local
+*.env
+
+# Config files with sensitive data
+config/config.yaml
+config/config.yml
+config/*.local.yaml
+config/*.local.yml
+
+# Log files
+logs/
+*.log
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Database files (for local development)
+*.db
+*.sqlite
+*.sqlite3
+dump.rdb
+
+# Compiled Object files
+*.o
+*.a
+
+# Debug files
+debug
+__debug_bin*
+
+# Air live reload tool
+.air.toml
+
+# MCP compiled binaries
+common/mcp/mcp_server
+common/mcp/**/server
+
+# User uploaded files
+uploads/
+
+# Temporary/TODO files
+todo.*
+*.todo

@@ -38,6 +38,7 @@ nexusai.exe
 
 # Environment files
 .env
+.claude/
 .env.local
 .env.*.local
 *.env

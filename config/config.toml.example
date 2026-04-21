@@ -1,0 +1,78 @@
+[main_config]
+app_name = "NexusAi"
+host = "0.0.0.0"
+port = 8080
+
+[mysql_config]
+host = "127.0.0.1"
+port = 3306
+user = "root"
+password = "Lx20060311"
+db_name = "NexusAi"
+
+[redis_config]
+host = "127.0.0.1"
+port = 6379
+password = ""
+db = 0
+
+[qdrant_config]
+host = "localhost"           # Qdrant 服务地址
+port = 6334                  # Qdrant 端口
+api_key = ""                 # API Key（云服务需要，私有部署留空）
+collection = "nexus_ai"       # 集合名称
+
+[smtp]
+email_addr =
+smtp_key = 
+smtp_server = 
+
+[auth_code_config]
+access_key_id = ""
+access_key_secret = ""
+sign_name = ""
+template_code = ""
+
+[log_config]
+log_path = "./logs"
+
+[rabbitmq_config]
+host = "127.0.0.1"
+port = 5672
+username = "guest"
+password = "guest"
+vhost = "/"
+
+[static_src_config]
+static_avatar_path = "./static/avatars"
+static_file_path = "./static/files"
+
+
+[jwt_config]
+secret_key = 
+issuer = 
+subject = "user token"
+
+[rag_config]
+rag_dimension = 1024
+rag_chat_model_name = "deepseek-chat"
+rag_doc_dir = "./Rag_docs"
+rag_base_url = "https://dashscope.aliyuncs.com/compatible-mode/v1"
+rag_embedding_model = "text-embedding-v3"
+rag_chunk_size = 800
+rag_chunk_overlap = 200
+
+[voice_service_config]
+access_key_id = 
+access_key_secret = 
+app_key =
+
+# AI 上下文配置
+[ai_config]
+max_context_messages = 20     # 最大保留消息轮次（一问一答为1轮）
+max_context_tokens = 16000     # 最大上下文 Token 数
+context_strategy = "sliding_window"  # 上下文策略：sliding_window（滑动窗口） / summary（摘要压缩）
+request_queue_size = 100       # 请求队列大小
+default_max_iterations = 10    # Agent 默认最大迭代次数
+helper_cleanup_interval = 5    # Helper 清理间隔（分钟）
+helper_expire_duration = 30    # Helper 过期时间（分钟）

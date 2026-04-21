@@ -11,11 +11,11 @@
 # Output of the go coverage tool
 *.out
 ./claude
-
+.env
 # Go workspace file
 go.work
 go.work.sum
-
+*.toml
 # Dependency directories
 vendor/
 
